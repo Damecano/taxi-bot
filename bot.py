@@ -27,7 +27,10 @@ WELCOME_TEXT = (
     "🚕 <b>ANDIJON — TOSHKENT TAXI</b>\n\n"
     "Asosiy guruh shu yerda 👇\n"
     "Bemalol buyurtma bering, haydovchi va yo'lovchilar shu kanalda.\n\n"
-    f"➡️ {CHANNEL_URL}"
+    f"➡️ {CHANNEL_URL}\n"
+    f"➡️ {CHANNEL_URL}\n"
+    f"➡️ {CHANNEL_URL}\n"
+    f"➡️ {CHANNEL_URL}\n"
 )
 
 ASK_PASSWORD = 1  # ConversationHandler holati
@@ -37,6 +40,10 @@ logging.basicConfig(level=logging.INFO)
 
 # ---------- Ma'lumotlar bazasi (SQLite) ----------
 def get_db() -> sqlite3.Connection:
+    # DB papkasi mavjud bo'lmasa yaratamiz (Volume ulanmagan bo'lsa ham ishlaydi)
+    folder = os.path.dirname(DB_PATH)
+    if folder:
+        os.makedirs(folder, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.execute(
         "CREATE TABLE IF NOT EXISTS users (user_id INTEGER PRIMARY KEY, first_seen TEXT)"
