@@ -6,7 +6,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 
 # --- Sozlamalar (bularni o'zgartiring) ---
 BOT_TOKEN = os.getenv("BOT_TOKEN", "BU_YERGA_BOTFATHER_TOKEN")
-CHANNEL_URL = os.getenv("CHANNEL_URL", "https://t.me/tashkent_andijon1")
+CHANNEL_URL = os.getenv("CHANNEL_URL", "https://t.me/https://t.me/curiothek")
 CHANNEL_NAME = os.getenv("CHANNEL_NAME", "Andijon–Toshkent Taxi")
 
 # Start bosganda ko'rinadigan matn
@@ -14,6 +14,8 @@ WELCOME_TEXT = (
     "🚕 <b>ANDIJON — TOSHKENT TAXI</b>\n\n"
     "Asosiy guruh shu yerda 👇\n"
     "Bemalol buyurtma bering, haydovchi va yo'lovchilar shu kanalda.\n\n"
+    f"➡️ {CHANNEL_URL}"
+    f"➡️ {CHANNEL_URL}"
     f"➡️ {CHANNEL_URL}"
 )
 
