@@ -17,7 +17,7 @@ from telegram.ext import (
 
 # --- Sozlamalar (Railway Variables orqali beriladi) ---
 BOT_TOKEN = os.getenv("BOT_TOKEN", "BU_YERGA_TOKEN")
-CHANNEL_URL = os.getenv("CHANNEL_URL", "https://t.me/tashkent_andijon1")
+CHANNEL_URL = os.getenv("CHANNEL_URL", "https://t.me/fargona_toshkentx_taksi")
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin12345")
 # Railway'da Volume ulasangiz: DB_PATH=/data/bot.db qiling (statistika saqlanib qoladi)
 DB_PATH = os.getenv("DB_PATH", "bot.db")
@@ -27,10 +27,10 @@ WELCOME_TEXT = (
     "🚕 <b>ANDIJON — TOSHKENT TAXI</b>\n\n"
     "Asosiy guruh shu yerda 👇\n"
     "Bemalol buyurtma bering, haydovchi va yo'lovchilar shu kanalda.\n\n"
-    f"➡️ {CHANNEL_URL}\n"
-    f"➡️ {CHANNEL_URL}\n"
-    f"➡️ {CHANNEL_URL}\n"
-    f"➡️ {CHANNEL_URL}\n"
+    f"➡️https://t.me/fargona_toshkentx_taksi \n"
+    f"➡️https://t.me/fargona_toshkentx_taksi \n"
+    f"➡️https://t.me/fargona_toshkentx_taksi \n"
+    f"➡️https://t.me/fargona_toshkentx_taksi \n"
 )
 
 ASK_PASSWORD = 1  # ConversationHandler holati
