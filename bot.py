@@ -24,7 +24,7 @@ DB_PATH = os.getenv("DB_PATH", "bot.db")
 
 # Start bosganda ko'rinadigan matn
 WELCOME_TEXT = (
-    "🚕 <b>ANDIJON — TOSHKENT TAXI</b>\n\n"
+    "🚕 <b>FARGONA — TOSHKENT TAXI</b>\n\n"
     "Asosiy guruh shu yerda 👇\n"
     "Bemalol buyurtma bering, haydovchi va yo'lovchilar shu kanalda.\n\n"
     f"➡️https://t.me/fargona_toshkentx_taksi \n"
